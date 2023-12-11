@@ -1,7 +1,7 @@
 export class configData {
   static title = '니힐앱스';
   static description = '크고 작은 웹 프로그램을 만듭니다.';
-  static keywords = 'app,앱,프로그램,program,웹개발,web development';
+  static keywords = 'app,앱,프로그램,program,웹개발,web development,프로그래밍,programming';
   static author = {
     name: 'NIHILncunia',
     url: 'https://github.com/NIHILncunia',

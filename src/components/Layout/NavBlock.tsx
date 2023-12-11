@@ -18,7 +18,8 @@ export function NavBlock({ styles, }: Props) {
     <>
       <nav className={css.default}>
         <Link href='/'>홈</Link>
-        <Link href='/example'>예시</Link>
+        <Link href='/about'>소개</Link>
+        <Link href='/apps'>프로그램 목록</Link>
       </nav>
     </>
   );
