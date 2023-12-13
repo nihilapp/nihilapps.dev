@@ -7,7 +7,7 @@ import '@/src/styles/tailwind.scss';
 import 'react-toastify/dist/ReactToastify.css';
 import { Providers } from '@/src/layouts';
 import {
-  FooterBlock, HeaderBlock, MainBlock, NavBlock
+  FooterBlock, HeaderBlock, MainBlock
 } from '@/src/components/Layout';
 
 const notoSansKR = Noto_Sans_KR({
