@@ -10,14 +10,16 @@ interface Props {
 export function HomePage({ styles, }: Props) {
   const css = {
     default: twJoin([
-      ``,
+      `py-10`,
       styles,
     ]),
   };
 
   return (
     <>
-      <div className={css.default}>Home</div>
+      <div className={css.default}>
+        content
+      </div>
     </>
   );
 }

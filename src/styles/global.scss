@@ -1,3 +1,11 @@
 * {
   @apply box-border p-0 m-0 font-sans
 }
+
+body {
+  @apply bg-black-100 flex flex-col
+}
+
+html, body {
+  @apply h-full
+}

@@ -9,7 +9,7 @@ interface Props {
 export function MainBlock({ children, styles, }: Props) {
   const css = {
     default: twJoin([
-      ``,
+      `flex-1`,
       styles,
     ]),
   };
