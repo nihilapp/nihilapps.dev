@@ -14,7 +14,7 @@ interface Props {
 export function FooterBlock({ styles, }: Props) {
   const css = {
     default: twJoin([
-      `bg-black-700 p-3 text-[1rem] flex items-center justify-center gap-3`,
+      `bg-black-700 p-3 text-[1rem] flex items-center justify-center gap-1`,
       styles,
     ]),
     link: twJoin([
@@ -25,10 +25,10 @@ export function FooterBlock({ styles, }: Props) {
   return (
     <>
       <footer className={css.default}>
-        <Link href='/privacy-policy' className={css.link}>
+        <Link href='/policy?mode=privacy' className={css.link}>
           <Icon icon='mdi:paper' className='mt-[2px]' /> 개인정보처리방침
         </Link>
-        <Link href='/terms-of-use' className={css.link}>
+        <Link href='/policy?mode=terms' className={css.link}>
           <Icon icon='mdi:paper' className='mt-[2px]' /> 이용약관
         </Link>
         <a href='https://nihilncunia.dev' target='_blank' rel='noopener noreferrer' className='p-3 hover:bg-black-base rounded-2 flex items-center justify-center'>

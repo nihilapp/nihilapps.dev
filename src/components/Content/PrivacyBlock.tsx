@@ -7,19 +7,17 @@ interface Props {
   styles?: ClassNameValue;
 }
 
-export function HomePage({ styles, }: Props) {
+export function PrivacyBlock({ styles, }: Props) {
   const css = {
     default: twJoin([
-      `py-10`,
+      ``,
       styles,
     ]),
   };
 
   return (
     <>
-      <div className={css.default}>
-        content
-      </div>
+      <div className={css.default}>content</div>
     </>
   );
 }

@@ -12,7 +12,7 @@ interface Props {
 export function NavBlock({ styles, }: Props) {
   const css = {
     default: twJoin([
-      `flex flex-row gap-3`,
+      `flex flex-row gap-1 p-2`,
       styles,
     ]),
     link: twJoin([
@@ -23,14 +23,11 @@ export function NavBlock({ styles, }: Props) {
   return (
     <>
       <nav className={css.default}>
-        <Link href='/' className={css.link}>
-          <Icon icon='ion:home-sharp' className='mt-[2px]' /> 홈
-        </Link>
-        <Link href='/about' className={css.link}>
-          <Icon icon='mdi:about' className='mt-[2px]' /> 소개
-        </Link>
-        <Link href='/apps' className={css.link}>
+        <Link href='/' as='/' className={css.link}>
           <Icon icon='tabler:apps-filled' className='mt-[2px]' /> 프로그램 목록
+        </Link>
+        <Link href='/about' as='/about' className={css.link}>
+          <Icon icon='mdi:about' className='mt-[2px]' /> 소개
         </Link>
       </nav>
     </>
